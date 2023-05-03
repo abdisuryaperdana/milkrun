@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color: #eee;
+  
+}
+
+.layout{
+  display: flex;
+  height: 100vh;
+  gap: 2rem;
+}
+
+.sidebar_wrapper{
+  position: relative;
+}
+
+.sidebar{
+  width: 17rem;
+  height: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  transition: all 0.3s linear;
+}
+
+.sidebar_top{
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid white;
+}
+
+.sidebar_logo{
+  width: 3.4rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.sidebar_list{
+  list-style: none;
+}
+
+.sidebar_title{
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  
+}
+
+.sidebar_link{
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  padding: 0.8rem 1rem;
+  display: flex;
+  background-color: #00ABE4;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+}
+
+.sidebar_icon{
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.sidebar_name{
+  margin-left: 0.5rem;
+}
+
+.btn{
+  position: absolute;
+  right: 0;
+  top: 4rem;
+  border: none;
+  background-color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: translateX(50%);
+  font-size: 1.1rem;
+
+}
+
+[data-collapse="true"]{
+  width: 5.3rem;
+}
+
+[data-collapse="true"] .sidebar_name,
+[data-collapse="true"] .sidebar_title{
+  display: none;
+}
